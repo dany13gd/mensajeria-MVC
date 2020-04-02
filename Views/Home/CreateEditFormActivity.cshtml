@@ -1,4 +1,4 @@
-﻿@model MVC_2.Models.Contactos_android
+﻿@model MensajeriaMVC.Models.ContactosAndroid
 
 @{
     Layout = null;
@@ -93,10 +93,7 @@
                 <div class="form-group">
                     <label>Direccion para la correspondencia:</label>
                     @Html.CheckBoxFor(x => x.correspondence, new { x = "1" })
-
                 </div>
-
-
 
                 @*<div class="form-group">
                          <label>Asistiras?:</label>
@@ -109,7 +106,7 @@
                 @*</div>*@
                 <div class="text-center">
                     <input class="btn btn-success" type="submit" value="Guardar" />
-                    <div class="btn btn-success" typeof="submit">
+                    <div class="btn btn-success" type="submit">
 
                         @Html.ActionLink("VOLVER", "MainActivity")
                     </div>

@@ -10,30 +10,27 @@ namespace MensajeriaMVC.Controllers
     public class HomeController : Controller
     {
         // GET: Home
-        public ActionResult Index()
-        {
-            return View();
-        }
-
+         
         public ActionResult MainActivity()
         {
             return View();
         }
 
+        [HttpPost]
         public ActionResult CreateEditFormActivity()
         {
             return View();
         }
 
+        [HttpPost]
         public ActionResult ContactDetailActivity()
-        {
-            
+        {            
             return View(); 
         }
 
+        [HttpPost]
         public ActionResult ListActivity()
         {
-
 
             return View();
         }

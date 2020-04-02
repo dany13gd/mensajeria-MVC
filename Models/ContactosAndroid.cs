@@ -1,17 +1,13 @@
-﻿using CommonMark.Syntax;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
-namespace MVC_2.Models
+namespace MensajeriaMVC.Models
 {
-
-
-    public class Contactos_android
+    public class ContactosAndroid
     {
-
         [Required(ErrorMessage = "Nombre")]
         public string name { get; set; }
 
@@ -62,8 +58,5 @@ namespace MVC_2.Models
 
         [Required(ErrorMessage = "Foto")]
         public string imagen { get; set; }
-
-
     }
- 
 }
