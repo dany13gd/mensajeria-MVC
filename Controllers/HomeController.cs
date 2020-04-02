@@ -16,19 +16,19 @@ namespace MensajeriaMVC.Controllers
             return View();
         }
 
-        [HttpPost]
+    
         public ActionResult CreateEditFormActivity()
         {
             return View();
         }
 
-        [HttpPost]
+
         public ActionResult ContactDetailActivity()
         {            
             return View(); 
         }
 
-        [HttpPost]
+
         public ActionResult ListActivity()
         {
 
