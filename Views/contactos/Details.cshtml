@@ -1,168 +1,76 @@
 ﻿@model MensajeriaMVC.Models.contactos
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Detalle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<div class="text-center">
-    <h2>Detalle</h2>
-</div>
-<style>
-    .btn a {
-        color: white;
-        text-decoration: none
-    }
 
-    body {
-        background-color: #F1F1F1;
-    }
-</style>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h4>Contactos</h4>
+            </div>
+            <hr />
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <p><span class="bold">@Html.DisplayNameFor(model => model.nombre): </span> @Html.DisplayFor(model => model.nombre)</p>
+            </div>
+            <div class="col-4">
+                <p><span class="bold">@Html.DisplayNameFor(model => model.organizacion): </span> @Html.DisplayFor(model => model.organizacion)</p>
+            </div>
+            <div class="col-4">
+                <p><span class="bold">@Html.DisplayNameFor(model => model.puesto): </span> @Html.DisplayFor(model => model.puesto)</p>
+            </div>
+            <div class="col-4">
+                <p><span class="bold">@Html.DisplayNameFor(model => model.archivar_como_a): </span> @Html.DisplayFor(model => model.archivar_como_a)</p>
+            </div>
+            <div class="col-4">
+                <p><span class="bold">@Html.DisplayNameFor(model => model.email): </span> @Html.DisplayFor(model => model.email)</p>
+            </div>
+            <div class="col-4">
+                <p><span class="bold">@Html.DisplayNameFor(model => model.mostrar_como): </span> @Html.DisplayFor(model => model.mostrar_como)</p>
+            </div>
+            <div class="col-4">
+                <p><span class="bold">@Html.DisplayNameFor(model => model.pagina_web): </span> @Html.DisplayFor(model => model.pagina_web)</p>
+            </div>
+            <div class="col-4">
+                <p><span class="bold">@Html.DisplayNameFor(model => model.direccion_im): </span> @Html.DisplayFor(model => model.direccion_im)</p>
+            </div>
+            <div class="col-4">
+                <p><span class="bold">@Html.DisplayNameFor(model => model.tel_trabajo): </span> @Html.DisplayFor(model => model.tel_trabajo)</p>
+            </div>
+            <div class="col-4">
+                <p><span class="bold">@Html.DisplayNameFor(model => model.tel_particular): </span> @Html.DisplayFor(model => model.tel_particular)</p>
+            </div>
+            <div class="col-4">
+                <p><span class="bold">@Html.DisplayNameFor(model => model.fax_trabajo): </span> @Html.DisplayFor(model => model.fax_trabajo)</p>
+            </div>
+            <div class="col-4">
+                <p><span class="bold">@Html.DisplayNameFor(model => model.tel_movil): </span> @Html.DisplayFor(model => model.tel_movil)</p>
+            </div>
+            <div class="col-4">
+                <p><span class="bold">@Html.DisplayNameFor(model => model.direccion_trabajo): </span> @Html.DisplayFor(model => model.direccion_trabajo)</p>
+            </div>
+            <div class="col-4">
+                <p><span class="bold">@Html.DisplayNameFor(model => model.direccion_correspondencia): </span> @Html.DisplayFor(model => model.direccion_correspondencia)</p>
+            </div>
+            <div class="col-4">
+                <p><span class="bold">@Html.DisplayNameFor(model => model.notas): </span> @Html.DisplayFor(model => model.notas)</p>
+            </div>
+            <div class="col-4">
+                <p><span class="bold">@Html.DisplayNameFor(model => model.imagen): </span> @Html.DisplayFor(model => model.imagen)</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+
+                @Html.ActionLink("Editar", "Edit", "contactos", new { id = Model.id }, new { @class = "btn btn-primary" })
+
+                @Html.ActionLink("Menu", "MainView", "contactos", new object { }, new { @class = "btn btn-success" })
 
 
-<div>
-    <h4>contactos</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.nombre)
-        </dt>
+            </div>
 
-        <dd>
-            @Html.DisplayFor(model => model.nombre)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.organizacion)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.organizacion)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.puesto)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.puesto)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.archivar_como_a)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.archivar_como_a)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.email)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.email)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.mostrar_como)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.mostrar_como)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.pagina_web)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.pagina_web)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.direccion_im)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.direccion_im)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.tel_trabajo)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.tel_trabajo)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.tel_particular)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.tel_particular)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.fax_trabajo)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.fax_trabajo)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.tel_movil)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.tel_movil)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.direccion_trabajo)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.direccion_trabajo)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.direccion_correspondencia)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.direccion_correspondencia)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.notas)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.notas)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.imagen)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.imagen)
-        </dd>
-
-    </dl>
-</div>
-<p>
-    <div class="col-md-offset-2 col-md-10">
-        
-        <div class ="btn btn-success" />
-            @Html.ActionLink("Editar", "Edit", new { id = Model.id }) |
-        
-        <div class="btn btn-success">
-            @Html.ActionLink("Menu", "MainView")
-        </div> 
-           
-        
+        </div>
     </div>
-      
-</p>
