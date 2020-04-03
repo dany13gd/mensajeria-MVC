@@ -1,46 +1,12 @@
 ﻿
 @{
-    Layout = null;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Inicio";
 }
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <link href="~/Content/bootstrap.css" rel="stylesheet" />
-    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
-    <meta name="viewport" content="width=device-width" />
-    <title>MainActivity</title>
-    <style>
-        .btn a {
-            color: white;
-            text-decoration: none
-        }
 
-        body {
-            background-color: #F1F1F1;
-        }
-    </style>
-</head>
-<body>
-    <div class="text-center">
-        <h2>Menú Mensajería</h2>
-
-        <div class="btn btn-success">
-            @Html.ActionLink("INGRESAR CONTACTO", "Create")
-        </div>
-        <div class="btn btn-success">
-
-            @Html.ActionLink("LISTA DE CONTACTOS", "Index")
-        </div>
-      
-        <div style="padding:25px;">
-            <br />
-            <br />
-            <img src="~/Images/ContactManagement.jpg"  width="400" />
-                 
-            
-        </div>
+<div class="text-center">
+    <div style="padding:25px;">
+        <img src="~/Images/ContactManagement.jpg"  width="400" />
     </div>
-</body>
-</html>
+</div>

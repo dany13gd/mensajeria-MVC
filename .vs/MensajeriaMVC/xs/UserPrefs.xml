@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{B4D7721D-03BC-4751-AEF2-2E28304FC2D9}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Shared/_Layout.cshtml">
+    <Files>
+      <File FileName="Scripts/validations.js" Line="12" Column="1" />
+      <File FileName="Views/Shared/_Layout.cshtml" Line="28" Column="8" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MensajeriaMVC" expanded="True">
+            <Node name="MensajeriaMVC" expanded="True">
+              <Node name="Scripts" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="contactos" expanded="True" />
+                <Node name="Shared" expanded="True">
+                  <Node name="_Layout.cshtml" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.MensajeriaMVC PreferredExecutionTarget="/Applications/Brave Browser.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
