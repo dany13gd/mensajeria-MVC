@@ -1,0 +1,157 @@
+﻿@model MensajeriaMVC.Models.contactos
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>contactos</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.nombre)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.nombre)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.organizacion)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.organizacion)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.puesto)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.puesto)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.archivar_como_a)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.archivar_como_a)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.email)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.email)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.mostrar_como)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.mostrar_como)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.pagina_web)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.pagina_web)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.direccion_im)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.direccion_im)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tel_trabajo)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tel_trabajo)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tel_particular)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tel_particular)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.fax_trabajo)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.fax_trabajo)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tel_movil)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tel_movil)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.direccion_trabajo)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.direccion_trabajo)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.direccion_correspondencia)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.direccion_correspondencia)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.notas)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.notas)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.imagen)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.imagen)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MensajeriaModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="contactos">
+      <EntityTypeMapping TypeName="MensajeriaModel.contactos">
+        <MappingFragment StoreEntitySet="contactos">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="organizacion" ColumnName="organizacion" />
+          <ScalarProperty Name="puesto" ColumnName="puesto" />
+          <ScalarProperty Name="archivar_como_a" ColumnName="archivar_como_a" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="mostrar_como" ColumnName="mostrar_como" />
+          <ScalarProperty Name="pagina_web" ColumnName="pagina_web" />
+          <ScalarProperty Name="direccion_im" ColumnName="direccion_im" />
+          <ScalarProperty Name="tel_trabajo" ColumnName="tel_trabajo" />
+          <ScalarProperty Name="tel_particular" ColumnName="tel_particular" />
+          <ScalarProperty Name="fax_trabajo" ColumnName="fax_trabajo" />
+          <ScalarProperty Name="tel_movil" ColumnName="tel_movil" />
+          <ScalarProperty Name="direccion_trabajo" ColumnName="direccion_trabajo" />
+          <ScalarProperty Name="direccion_correspondencia" ColumnName="direccion_correspondencia" />
+          <ScalarProperty Name="notas" ColumnName="notas" />
+          <ScalarProperty Name="imagen" ColumnName="imagen" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

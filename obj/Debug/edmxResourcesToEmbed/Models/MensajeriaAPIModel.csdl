@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MensajeriaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="contactos">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="organizacion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="puesto" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="archivar_como_a" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="mostrar_como" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="pagina_web" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="direccion_im" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="tel_trabajo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tel_particular" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="fax_trabajo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tel_movil" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="direccion_trabajo" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="direccion_correspondencia" Type="Int32" />
+    <Property Name="notas" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="imagen" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="contactos" EntityType="Self.contactos" />
+  </EntityContainer>
+</Schema>

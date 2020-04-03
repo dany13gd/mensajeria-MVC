@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MensajeriaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="contactos">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="organizacion" Type="nvarchar" MaxLength="50" />
+    <Property Name="puesto" Type="nvarchar" MaxLength="100" />
+    <Property Name="archivar_como_a" Type="nvarchar" MaxLength="50" />
+    <Property Name="email" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="mostrar_como" Type="nvarchar" MaxLength="50" />
+    <Property Name="pagina_web" Type="nvarchar" MaxLength="150" />
+    <Property Name="direccion_im" Type="nvarchar" MaxLength="100" />
+    <Property Name="tel_trabajo" Type="nvarchar" MaxLength="50" />
+    <Property Name="tel_particular" Type="nvarchar" MaxLength="50" />
+    <Property Name="fax_trabajo" Type="nvarchar" MaxLength="50" />
+    <Property Name="tel_movil" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="direccion_trabajo" Type="nvarchar" MaxLength="250" />
+    <Property Name="direccion_correspondencia" Type="int" />
+    <Property Name="notas" Type="nvarchar" MaxLength="500" />
+    <Property Name="imagen" Type="varchar(max)" />
+  </EntityType>
+  <EntityContainer Name="MensajeriaModelStoreContainer">
+    <EntitySet Name="contactos" EntityType="Self.contactos" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
