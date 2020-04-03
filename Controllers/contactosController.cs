@@ -12,7 +12,7 @@ namespace MensajeriaMVC.Controllers
 {
     public class contactosController : Controller
     {
-        private Entities db = new Entities();
+        private MensajeriaEntities db = new MensajeriaEntities();
 
         // GET: contactos
         public ActionResult Index()
@@ -123,27 +123,9 @@ namespace MensajeriaMVC.Controllers
             }
             base.Dispose(disposing);
         }
+
         public ActionResult MainView()
         {
-            return View();
-        }
-
-
-        public ActionResult CreateEditFormView()
-        {
-            return View();
-        }
-
-
-        public ActionResult ContactDetailView()
-        {
-            return View();
-        }
-
-
-        public ActionResult ListView()
-        {
-
             return View();
         }
     }

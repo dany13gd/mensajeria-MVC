@@ -1,134 +1,137 @@
 ﻿@model IEnumerable<MensajeriaMVC.Models.contactos>
 
 @{
-    Layout = null;
+    ViewBag.Title = "Contactos";
+}
+    <div class="text-center">
+        <h2>Contactos</h2>
+    </div>
+    <style>
+        .btn a {
+            color: white;
+            text-decoration: none
+        }
+
+        body {
+            background-color: #F1F1F1;
+        }
+    </style>
+
+<p>
+    <div class="btn btn-success">
+        @Html.ActionLink("Crear Nuevo", "Create")
+    </div>
+   
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.organizacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.puesto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.archivar_como_a)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.mostrar_como)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pagina_web)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.direccion_im)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tel_trabajo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tel_particular)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fax_trabajo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tel_movil)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.direccion_trabajo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.direccion_correspondencia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.notas)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.imagen)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.organizacion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.puesto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.archivar_como_a)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.mostrar_como)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pagina_web)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.direccion_im)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tel_trabajo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tel_particular)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fax_trabajo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tel_movil)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.direccion_trabajo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.direccion_correspondencia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.notas)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.imagen)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Detalles", "Details", new { id=item.id }) |
+            @Html.ActionLink("Borrar", "Delete", new { id=item.id })
+        </td>
+    </tr>
 }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <link href="~/Content/bootstrap.css" rel="stylesheet" />
-    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-</head>
-<body>
-    <p>
-        @Html.ActionLink("Create New", "Create")
-    </p>
-    <table class="table">
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.nombre)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.organizacion)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.puesto)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.archivar_como_a)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.email)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.mostrar_como)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.pagina_web)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.direccion_im)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.tel_trabajo)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.tel_particular)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.fax_trabajo)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.tel_movil)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.direccion_trabajo)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.direccion_correspondencia)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.notas)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.imagen)
-            </th>
-            <th></th>
-        </tr>
-    
-    @foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.nombre)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.organizacion)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.puesto)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.archivar_como_a)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.mostrar_como)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.pagina_web)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.direccion_im)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.tel_trabajo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.tel_particular)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.fax_trabajo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.tel_movil)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.direccion_trabajo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.direccion_correspondencia)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.notas)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.imagen)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
-                @Html.ActionLink("Details", "Details", new { id=item.id }) |
-                @Html.ActionLink("Delete", "Delete", new { id=item.id })
-            </td>
-        </tr>
-    }
-    
-    </table>
-</body>
-</html>
+</table>

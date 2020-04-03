@@ -22,7 +22,7 @@
     <Property Name="notas" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
     <Property Name="imagen" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
   </EntityType>
-  <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="MensajeriaEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="contactos" EntityType="Self.contactos" />
   </EntityContainer>
 </Schema>
